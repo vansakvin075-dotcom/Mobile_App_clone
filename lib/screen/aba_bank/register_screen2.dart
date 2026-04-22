@@ -69,7 +69,7 @@ class _TermsScreenState extends State<RegisterScreen2> {
 
             const SizedBox(height: 20),
 
-            // ប៊ូតុង យល់ព្រម
+          
             SizedBox(
               width: double.infinity,
               height: 50,

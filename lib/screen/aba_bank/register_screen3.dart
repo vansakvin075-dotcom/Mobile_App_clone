@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'register_screen4.dart';
 
 class RegisterScreen3 extends StatefulWidget {
   const RegisterScreen3({super.key});
@@ -86,20 +87,30 @@ class _RegisterScreen3State extends State<RegisterScreen3> {
             
             const Spacer(),
 
+           
             // ប៊ូតុង "បន្ទាប់"
             SizedBox(
               width: double.infinity,
               height: 55,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  // កូដសម្រាប់ផ្ទេរទៅទំព័រទី ៤
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const RegisterScreen4()),
+                  );
+                },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFFE21E1E), // ពណ៌ក្រហម ABA
                   shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
                 ),
-                child: const Text("បន្ទាប់", style: TextStyle(color: Colors.white, fontSize: 18)),
+                child: const Text(
+                  "បន្ទាប់", 
+                  style: TextStyle(color: Colors.white, fontSize: 18),
+                ),
               ),
             ),
-            const SizedBox(height: 20),
+                        const SizedBox(height: 20),
           ],
         ),
       ),
