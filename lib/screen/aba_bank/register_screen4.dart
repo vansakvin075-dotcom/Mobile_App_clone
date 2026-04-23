@@ -6,7 +6,7 @@ class RegisterScreen4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF002D3D),
+      backgroundColor: const Color.fromARGB(255, 147, 167, 174),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,
